@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fa00a2ff">
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="地址"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="@dimen/content_title"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/recUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/addconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/darker_gray"
+        >
+        <TextView
+            android:id="@+id/adDescript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="广告描述:这里显示轮播广告"
+            android:layout_alignParentBottom="true"
+            />
+        </RelativeLayout>
+
+    <GridView
+        android:id="@+id/functionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        />
+</LinearLayout>

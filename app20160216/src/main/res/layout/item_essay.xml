@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:minHeight="80dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/essaytitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="新人报个到！"
+        android:textColor="#000000"
+        android:textSize="16sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/essaytype"
+        android:layout_width="27dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ltr"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/essaybody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/essaytitle"
+
+        android:layout_marginTop="2dp"
+        android:textSize="14sp"
+        android:text="第一次发帖，希望各位大哥哥大姐姐叔叔阿姨们多多关照！他日良辰必有重谢！"
+
+        />
+
+    <TextView
+        android:id="@+id/essaytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:text="2016-02-16"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/commentnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:text="123" />
+    <ImageView
+        android:id="@+id/commentimg"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_toStartOf="@id/commentnum"
+        android:background="@drawable/lvd"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/scannum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/commentimg"
+        android:layout_marginRight="8dp"
+        android:textSize="14sp"
+        android:text="234" />
+
+
+
+    <ImageView
+        android:id="@+id/scanimg"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toStartOf="@id/scannum"
+        android:background="@drawable/mbd"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

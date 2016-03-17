@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fa00a2ff"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="发表新帖"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+
+        android:id="@+id/title1"
+        android:text="标题："
+        android:layout_below="@id/titlebar"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        />
+    <EditText
+        android:id="@+id/addtitle"
+        android:layout_below="@id/titlebar"
+        android:layout_toRightOf="@id/title1"
+        android:textSize="16dp"
+        android:hint="16字以内"
+        android:textColor="#000000"
+        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:gravity="center|left"
+        android:layout_height="48dp" />
+    <TextView
+        android:id="@+id/date1"
+        android:text="日期："
+        android:textColor="#000000"
+        android:layout_below="@id/title1"
+        android:textSize="16dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        />
+    <TextView
+        android:id="@+id/adddate"
+        android:layout_toEndOf="@id/date1"
+        android:layout_below="@id/title1"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:text="2016年2月17日10:00:22"
+        android:layout_width="match_parent"
+        android:gravity="center|left"
+        android:layout_height="48dp" />
+
+
+    <TextView
+        android:id="@+id/body1"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="文章内容："
+        android:textSize="16dp"
+        android:layout_below="@id/date1"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:text="提交"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        />
+    <EditText
+        android:id="@+id/addbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/body1"
+        android:layout_above="@id/submit"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@android:drawable/edit_text"
+        android:text="啊烦恼年年初开始看空房价啦啊山东哦亲烦恼年年初开始看空房价啦啊山东哦亲我看人拉卡啦师范类释放咖啡来啦斯里兰卡方式我看人拉卡啦师范类释放咖啡来啦斯里兰卡方式"
+        />
+
+
+
+</RelativeLayout>

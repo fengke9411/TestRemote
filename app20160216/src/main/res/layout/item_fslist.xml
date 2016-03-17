@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:clipChildren="false"
+   >
+
+    <ImageView
+        android:id="@+id/fsheadview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/my"
+
+        />
+    <TextView
+        android:id="@+id/fsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是我的"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_toRightOf="@id/fsheadview"
+        android:textSize="@dimen/content_title"
+        android:textColor="@color/href"
+        />
+    <TextView
+        android:id="@+id/fsBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是我的内容：今天好忙啊，但是总觉得什么也没做。:>"
+        android:layout_toRightOf="@id/fsheadview"
+        android:layout_below="@id/fsName"
+        android:textSize="@dimen/content_title"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/fsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="15:23"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/fsheadview"
+        android:layout_below="@id/fsBody"
+        android:textSize="@dimen/content_title"
+        android:textColor="@android:color/darker_gray"
+        />
+    <TextView
+        android:id="@+id/fsComment"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="评论"
+        android:gravity="center_vertical"
+
+        android:layout_below="@id/fsBody"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/content_title"
+
+        android:textColor="@color/href"
+        />
+    <TextView
+        android:id="@+id/fsPraise"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="赞"
+        android:gravity="center_vertical"
+
+        android:layout_below="@id/fsBody"
+        android:layout_toStartOf="@id/fsComment"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:textSize="@dimen/content_title"
+        android:textColor="@color/href"
+        />
+
+</RelativeLayout>
